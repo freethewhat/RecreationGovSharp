@@ -2,9 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Title>Recreation.gov API</Title>
+    <Description>A .net core compatible API wrapper to interface with the recreation.gov (RIDB) public API.</Description>
     <PackageId>RecreationGovApi</PackageId>
     <Version>1.0.0.0</Version>
     <Authors>Matt Sutton</Authors>
+    <PackageTags>API;Recreation;Gov;RIDB;Recreation.gov;REST</PackageTags>
   </PropertyGroup>
 
 </Project>
