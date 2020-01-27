@@ -6,26 +6,148 @@ namespace RecreationGovSharp.Schemas
 {
     public class Facility
     {
-        public string FacilityIf { get; set; }
+        public string FacilityId { get; set; }
         public string LegacyFacilityId { get; set; }
         public string OrgFacilityId { get; set; }
         public string ParentOrgId { get; set; }
         public string ParentRecAreaId { get; set; }
-        public string FacilityName { get; set; }
-        public string FacilityDescription { get; set; }
-        public string FacilityTypeDescription { get; set; }
+
+        private string _facilityName;
+        public string FacilityName {
+            get { return _facilityName; }
+            set
+            {
+                if (value.Length > 256)
+                    throw new ArgumentOutOfRangeException("Facility name cannot be longer than 256 characters.");
+
+                _facilityName = value;
+            } 
+        }
+
+        private string _facilityDescription;
+        public string FacilityDescription {
+            get { return _facilityDescription; }
+            set
+            {
+                if (value.Length > 4000)
+                    throw new ArgumentOutOfRangeException("Facility description cannot be longer than 4000 characters.");
+
+                _facilityDescription = value;
+            }
+        }
+
+        private string _facilityTypeDescription;
+        public string FacilityTypeDescription {
+            get { return _facilityTypeDescription; }
+            set
+            {
+                if (value.Length > 1024)
+                    throw new ArgumentOutOfRangeException("Facility type description cannot be longer than 1024 characters.");
+
+                _facilityTypeDescription = value;
+            }
+        } 
+
         public string FacilityUseFeeDescription { get; set; }
-        public string FacilityDirections { get; set; }
-        public string FacilityPhone { get; set; }
-        public string FacilityEmail { get; set; }
-        public string FacilityReservationUrl { get; set; }
-        public string FacilityMapUrl { get; set; }
-        public string FacilityAdaAccess { get; set; }
-        public GeoJson GeoJson { get; set; } // GEOJSON HERE
+
+        private string _facilityDirections;
+        public string FacilityDirections {
+            get { return _facilityDirections; }
+            set
+            {
+                if (value.Length > 4000)
+                    throw new ArgumentOutOfRangeException("Facility directions cannot be longer than 4000 characters.");
+            }
+        }
+
+        private string _facilityPhone;
+        public string FacilityPhone {
+            get { return _facilityPhone; }
+            set
+            {
+                if (value.Length > 256)
+                    throw new ArgumentOutOfRangeException("Facility phone cannot be longer than 256 characters.");
+
+                _facilityPhone = value;
+            }
+        }
+
+        private string _facilityEmail;
+        public string FacilityEmail {
+            get { return _facilityEmail; }
+            set
+            {
+                if (value.Length > 60)
+                    throw new ArgumentOutOfRangeException("Facility email cannot be longer than 60 characters.");
+
+                _facilityEmail = value;
+            }
+        }
+
+        private string _facilityReservationUrl;
+        public string FacilityReservationUrl {
+            get { return _facilityReservationUrl; }
+            set
+            {
+                if (value.Length > 256)
+                    throw new ArgumentOutOfRangeException("Facility reservation URL cannot be longer than 256 characters.");
+
+                _facilityReservationUrl = value;
+            }
+        } 
+
+        private string _facilityMapUrl;
+        public string FacilityMapUrl {
+            get { return _facilityMapUrl; }
+            set
+            {
+                if (value.Length > 256)
+                    throw new ArgumentOutOfRangeException("Facility map URL cannot be longer than 256 characters.");
+
+                _facilityMapUrl = value;
+            }
+        }
+
+        private string _facilityAdaAccess;
+        public string FacilityAdaAccess {
+            get { return _facilityAdaAccess; }
+            set
+            {
+                if (value.Length > 1024)
+                    throw new ArgumentOutOfRangeException("Facility ADA access cannot be longer than 1024 characters.");
+
+                _facilityAdaAccess = value;
+            }
+        } 
+
+        public GeoJson GeoJson { get; set; }
         public double FacilityLongitude { get; set; }
         public double FacilityLatitude { get; set; }
-        public string StayLimit { get; set; }
-        public string Keywords { get; set; }
+
+        private string _stayLimit;
+        public string StayLimit {
+            get { return _stayLimit; }
+            set
+            {
+                if (value.Length > 500)
+                    throw new ArgumentOutOfRangeException("Stay limit cannot be longer than 500 characters.");
+
+                _stayLimit = value;
+            }
+        }
+
+        private string _keywords;
+        public string Keywords {
+            get { return _keywords; }
+            set
+            {
+                if (value.Length > 4000)
+                    throw new ArgumentOutOfRangeException("Keywords cannot be longer than 4000 characters.");
+
+                _stayLimit = value;
+            }
+        } 
+
         public bool Reservable { get; set; }
         public bool Enabled { get; set; }
         public DateTime LastUpdatedDate { get; set; }
