@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecreationGovSharp", "RecreationGovSharp\RecreationGovSharp.csproj", "{663C4E22-9C2D-41A3-8781-5FFFE1491DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecreationGovSharpTest", "RecreationGovSharpTest\RecreationGovSharpTest.csproj", "{021E1ACF-2952-4228-B175-59599824A985}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{663C4E22-9C2D-41A3-8781-5FFFE1491DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663C4E22-9C2D-41A3-8781-5FFFE1491DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663C4E22-9C2D-41A3-8781-5FFFE1491DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663C4E22-9C2D-41A3-8781-5FFFE1491DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{021E1ACF-2952-4228-B175-59599824A985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021E1ACF-2952-4228-B175-59599824A985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021E1ACF-2952-4228-B175-59599824A985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021E1ACF-2952-4228-B175-59599824A985}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CC3796D-45FF-4453-B28A-CEB0710268D7}
+	EndGlobalSection
+EndGlobal
