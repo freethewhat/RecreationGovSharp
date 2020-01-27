@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RecreationGovSharp.Schemas
 {
-    class FacilityPermisEntrance
+    class FacilityPermitEntrance
     {
         public string PermitEntranceId { get; set; }
         public string PermitEntranceName { get; set; }
