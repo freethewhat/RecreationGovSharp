@@ -33,7 +33,7 @@ namespace RecreationGovSharp.Schemas
         public IList<PermitEntrance> PermitEntrances { get; set; }
         public IList<Tour> Tours { get; set; }
         public IList<Organization> Organizations { get; set; }
-        public IList<RecArea> RecAreas { get; set; }
+        public IList<RecreationArea> RecAreas { get; set; }
         public IList<FacilityAddress> FacilityAddresses { get; set; }
         public IList<Activity> Activities { get; set; }
         public IList<Event> Events { get; set; }

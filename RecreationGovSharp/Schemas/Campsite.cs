@@ -19,6 +19,6 @@ namespace RecreationGovSharp.Schemas
         public DateTime LastUpdatedDate { get; set; }
         public IList<Attribute> Attributes { get; set; }
         public IList<PermittedEquipment> PermittedEquipment { get; set; }
-        public IList<EntityMedia> EntityMedia { get; set; }
+        public IList<Media> EntityMedia { get; set; }
     }
 }

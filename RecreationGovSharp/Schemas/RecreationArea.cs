@@ -27,7 +27,7 @@ namespace RecreationGovSharp.Schemas
         public DateTime LastUpdatedDate { get; set; }
         public IList<Organization> Organizations { get; set; }
         public IList<Facility> Facilities { get; set; }
-        public IList<RecAreaAddress> RecAreaAddresses { get; set; }
+        public IList<RecreationAreaAddress> RecAreaAddresses { get; set; }
         public IList<Activity> Activities { get; set; }
         public IList<Event> Events { get; set; }
         public IList<Media> Media { get; set; }
