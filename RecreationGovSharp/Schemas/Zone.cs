@@ -7,6 +7,6 @@ namespace RecreationGovSharp.Schemas
     public class Zone
     {
         public string PermitEntranceZoneId { get; set; }
-        public string Zone { get; set; }
+        public string ZoneName { get; set; }
     }
 }
