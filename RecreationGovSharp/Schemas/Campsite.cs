@@ -8,10 +8,55 @@ namespace RecreationGovSharp.Schemas
     {
         public string CampsiteId { get; set; }
         public string FacilityId { get; set; }
-        public string CampsiteName { get; set; }
-        public string CampsiteType { get; set; }
-        public string TypeOfUse { get; set; }
-        public string Loop { get; set; }
+
+        private string _campsiteName;
+        public string CampsiteName { 
+            get { return _campsiteName; }
+            set 
+            {
+                if (value.Length > 255)
+                    throw new ArgumentOutOfRangeException("Campsite name cannot be longer than 255 characters.");
+
+                _campsiteName = value;
+            } 
+        }
+
+        private string _campsiteType;
+        public string CampsiteType { 
+            get { return _campsiteType; }
+            set
+            {
+                if (value.Length > 255)
+                    throw new ArgumentOutOfRangeException("Campsite type cannot be longer than 255 characters.");
+
+                _campsiteType = value;
+            }
+        }
+
+        private string _typeOfUse;
+        public string TypeOfUse {
+            get { return _typeOfUse; }
+            set
+            {
+                if (value.Length > 255)
+                    throw new ArgumentOutOfRangeException("Type of use cannot be longer than 255 characters.");
+
+                _typeOfUse = value;
+            }
+        }
+
+        private string _loop;
+        public string Loop {
+            get { return _loop; }
+            set
+            {
+                if (value.Length > 255)
+                    throw new ArgumentOutOfRangeException("Loop cannot be longer than 255 characters.");
+
+                _loop = value;
+            }
+        } 
+
         public bool CampsiteAccessible { get; set; }
         public double CampsiteLongitude { get; set; }
         public double CampsiteLatitude { get; set; }
