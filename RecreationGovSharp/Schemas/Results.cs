@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RecreationGovSharp.Schemas
 {
-    public class Result
+    public class Results
     {
         public int CurrentCount { get; set; }
         public int TotalCount { get; set; }
